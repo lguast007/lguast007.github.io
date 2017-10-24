@@ -1,0 +1,142 @@
+<HTML>
+<HEAD>
+<style>
+body {
+	background-color:#DBEBFF
+}
+b {
+	text-align:center;
+}	
+</style>	
+<TITLE>
+Perfect Pal
+</TITLE>
+<script LANGUAGE="JavaScript">
+<!--Hide JavaScript from Java-Impaired Browsers
+function test_it(entry) {
+if (entry.value!=null && entry.value.length!=0) {
+entry.value=""+ eval(entry.value);
+}
+computeForm(entry.form);
+}
+function computeForm(form) {
+var total=0
+
+for (var count=0; count<4; count++)
+{
+if (form.a[count].checked){
+var total=total+parseInt(form.a[count].value);
+}
+}
+
+for (var count=0; count<4; count++)
+{
+if (form.b[count].checked){
+var total=total+parseInt(form.b[count].value);
+}
+}
+
+for (var count=0; count<4; count++)
+{
+if (form.c[count].checked){
+var total=total+parseInt(form.c[count].value);
+}
+}
+
+for (var count=0; count<4; count++)
+{
+if (form.d[count].checked){
+var total=total+parseInt(form.d[count].value);
+}
+}
+
+for (var count=0; count<4; count++)
+{
+if (form.e[count].checked){
+var total=total+parseInt(form.e[count].value);
+}
+}
+
+for (var count=0; count<4; count++)
+{
+if (form.f[count].checked){
+var total=total+parseInt(form.f[count].value);
+}
+}
+
+for (var count=0; count<4; count++)
+{
+if (form.g[count].checked){
+var total=total+parseInt(form.g[count].value);
+}
+}
+
+for (var count=0; count<4; count++)
+{
+if (form.e[count].checked){
+var total=total+parseInt(form.e[count].value);
+}
+}
+
+if (total>79){ window.location="answerone.html" }
+else if (total>64){ window.location="answertwo.html" }
+else if (total<40){ window.location="answerthree.html" }
+else if (total<20){ window.location="answerfour.html" }
+else { window.location="answerfive.html" }
+}
+//-->
+</SCRIPT>
+</HEAD>
+
+<BODY>
+
+
+<h1 style="color:#2F63AA; text-align:center;"> CYSS Presents:<br> Pup Quiz!</br></h1>
+<form METHOD=POST>
+<b style="color:#2F63AA; text-align:center;">How often do you go on walks or our for a run?<br></b>
+<input TYPE="radio" NAME="a" VALUE="10">Often! I love Nature!<br>
+<input TYPE="radio" NAME="a" VALUE="10">I try to go at least two-three days a week.<br>
+<input TYPE="radio" NAME="a" VALUE="0">I might go a few times a month..<br>
+<input TYPE="radio" NAME="a" VALUE="8">Walk? Like from the couch to the fridge?<br><br>
+
+<b style="color:#2F63AA; text-align:center;">How often are you home?<br></b>
+<input TYPE="radio" NAME="b" VALUE="10">Most of the day! I'm a homebody/work from home!<br>
+<input TYPE="radio" NAME="b" VALUE="10">I'm pretty busy, but I'm off work at five and have the weekends off! <br>
+<input TYPE="radio" NAME="b" VALUE="0">I'm usually home pretty late, so around 5 hours of free time maybe?<br>
+<input TYPE="radio" NAME="b" VALUE="0">I'm always on the go! If I'm home, its probably to shower and sleep!<br><br>
+
+<b style="color:#2F63AA; text-align:center;">Speaking of home, how much space does your humble abode have?<br></b>
+<input TYPE="radio" NAME="c" VALUE="10">Very spacious, and with a plenty of land!<br>
+<input TYPE="radio" NAME="c" VALUE="10">Spacious, and a small yard/balcony.<br>
+<input TYPE="radio" NAME="c" VALUE="1">It's a little cozy.. (apartment/studio)<br>
+<input TYPE="radio" NAME="c" VALUE="0">Think coffin, but with a kitchen..<br><br>
+
+<b style="color:#2F63AA; text-align:center;">How often do you clean the house?<br></b>
+<input TYPE="radio" NAME="d" VALUE="10">I enjoy cleaning! It's very therapeutic!<br>
+<input TYPE="radio" NAME="d" VALUE="10">I don't mind, but its not my favorite.<br>
+<input TYPE="radio" NAME="d" VALUE="0">A couple times a month.<br>
+<input TYPE="radio" NAME="d" VALUE="0">I might own a vacuum, but I usually bribe someone to clean for me.<br><br>
+
+<b style="color:#2F63AA; text-align:center;"> What size dog is ideal for you?<br></b>
+<input TYPE="radio" NAME="e" VALUE="20">I want people to ask about my "horse"<br>
+<input TYPE="radio" NAME="e" VALUE="10">I would love to have a medium-large breed.<br>
+<input TYPE="radio" NAME="e" VALUE="0"> I want a dog I can carry (humanely) in a handbag.<br>
+<input TYPE="radio" NAME="e" VALUE="8">I prefer a medium-small sized dog<br><br>
+
+<b style="color:#2F63AA; text-align:center;"> Have you owned a dog before? <br></b>
+<input TYPE="radio" NAME="f" VALUE="0">Yes! I grew up around all breds/currently own a dog.<br>
+<input TYPE="radio" NAME="f" VALUE="0">We had an awesome dog growing up, but not since then.<br>
+<input TYPE="radio" NAME="f" VALUE="0">I've had one/two before.<br>
+<input TYPE="radio" NAME="f" VALUE="0">Nope! It's a new adventure!<br><br>
+
+<b style="color:#2F63AA; text-align:center;"> What kind of personality do you think you are looking for?<br></b>
+<input TYPE="radio" NAME="g" VALUE="15">I want a super energetic running partner!<br>
+<input TYPE="radio" NAME="g" VALUE="20">I want some energy! I love getting outside once in while.<br>
+<input TYPE="radio" NAME="g" VALUE="0">I want a snuggler...not too much energy.<br>
+<input TYPE="radio" NAME="g" VALUE="10">Do dog's hibernate? I want one that appreciates its sleep!<br><br>
+<input TYPE="button" VALUE="FIND YOUR FIDO!" onClick=computeForm(this.form)><br><br>
+
+
+</form>
+</BODY>
+</HTML>
